@@ -44,7 +44,7 @@ img {
 }
 /* -----------------------------------container-------------------------- */
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -65,14 +65,8 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
-  /* margin-right: 93px; */
 }
 /* -------------------------------------logo--------------------------- */
-
-/* flex-wrap: wrap;
-  gap: 10px;
-    */
 
 /* ------------------------header------------------------------- */
 .header-container {
@@ -83,8 +77,8 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 .contacts-header {
   display: flex;
@@ -165,8 +159,8 @@ margin-right: 0;} */
 .hero {
   text-align: center;
   background-color: var(--background-color);
-  padding: 200px 452px 280px 452px;
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -180,9 +174,6 @@ margin-right: 0;} */
   margin-bottom: 30px;
   background-color: var(--background-color);
 }
-/* .header {
-  padding-left: 215px;
-} */
 
 .button-main:hover,
 .button-main:focus {
@@ -232,7 +223,6 @@ margin-right: 0;} */
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-right: 30px;
 }
 .text-secondary {
   font-style: normal;
@@ -241,16 +231,39 @@ margin-right: 0;} */
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.title {
-  margin-bottom: 94px;
+/* .title-container {
+  padding-top: 94px;
+} */
+.features {
+  padding-top: 94px;
 }
-.plus {
+.features-container {
   display: flex;
-  margin-right: -70px;
-  /* align-items: center; */
-  /* margin-left: auto;
-  margin-right: auto; */
+  /* gap: 30px; */
+  /* min-width: 270px; */
 }
+.features-container .features-list:not(:last-child) {
+  margin-right: 30px;
+}
+.features-list {
+  min-width: 270px;
+}
+.work-list {
+  padding-top: 94px;
+}
+/* gap: 30px; */
+/* margin-left: 30px; */
+/* ------------------------------------------------------------------- */
+/* margin-right: -70px; */
+/* align-items: center;
+  margin-left: auto;
+  margin-right: auto; */
+
+/* align-items: center; 
+ text-align: center;  */
+/* margin-left: auto;
+  margin-right: auto; */
+
 /* .plus {
   display: flex;
   margin-left: auto;
@@ -280,17 +293,16 @@ margin-right: 0;} */
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .works-list {
   display: flex;
   gap: 30px;
-  /* margin-bottom: 94px; */
+  padding-bottom: 94px;
 }
 .team {
-  margin-top: 94px;
   background-color: var(--background-secondary);
+  padding-bottom: 94px;
 }
 .title-team {
   font-weight: 700;
@@ -306,16 +318,18 @@ margin-right: 0;} */
   display: flex;
   gap: 30px;
 }
-.container.team {
+.name-function {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* .container.team {
   padding-bottom: 94px;
-}
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
+} */
+
 .team-background {
+  width: 270px;
+  height: 368px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -327,7 +341,7 @@ margin-right: 0;} */
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--titles-color);
-  margin-top: 30px;
+
   text-align: center;
 }
 
@@ -348,10 +362,16 @@ margin-right: 0;} */
   /* justify-content: center; */
   margin-bottom: 94px;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 .sheet {
   flex-basis: calc((100% - 60px) / 3);
 }
-.footer {
+footer {
   background-color: var(--background-color);
 }
 /* .container.footer {
@@ -364,10 +384,11 @@ margin-right: 0;} */
 background-color: var(--background-color);
 
 } */
-.fotter-section {
+.fotter-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .address-map {
   color: #ffffff;
   text-decoration: none;
@@ -375,7 +396,6 @@ background-color: var(--background-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-top: 20px;
 }
 
 .contacts-footer {
@@ -395,19 +415,16 @@ background-color: var(--background-color);
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.fotter-address {
-  margin-bottom: 20px;
-}
-
 .place {
-  margin-bottom: 9px;
+  margin-top: 20px;
 }
 .mail-fotter {
-  margin-bottom: 9px;
+  margin-top: 9px;
 }
 .tel-fotter {
-  margin-bottom: 9px;
+  margin-top: 9px;
 }
+
 .address-map:hover,
 .address-map:focus {
   color: var(--accent-color);
